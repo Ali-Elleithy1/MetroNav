@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/MetroNav/app/src/main/res/drawable/ic_cairo_metro_logo2012.xml" value="0.144" />
+        <entry key="..\:/AndroidStudioProjects/MetroNav/app/src/main/res/drawable/ic_nearme.xml" value="0.152" />
+        <entry key="..\:/AndroidStudioProjects/MetroNav/app/src/main/res/drawable/ic_onmap.xml" value="0.152" />
+        <entry key="..\:/AndroidStudioProjects/MetroNav/app/src/main/res/drawable/ic_switch.xml" value="0.152" />
         <entry key="..\:/AndroidStudioProjects/MetroNav/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/MetroNav/app/src/main/res/layout/fragment_about.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/MetroNav/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

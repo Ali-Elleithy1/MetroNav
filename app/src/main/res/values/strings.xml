@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MetroNav</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about_text">This application is designed to help you get from your current location to your destination with ease. All you need to do is to provide the application with your pick-up location and your destination and the application will provide you with the best route.</string>
+    <string name="from_text">From</string>
+    <string name="to_text">To</string>
+    <string name="drop_off_text">Drop-Off Station</string>
+    <string name="pick_up_text">Pick-Up Station</string>
+    <string name="find_route_text">Find Route</string>
+    <string name="switch_content">switch stations</string>
 </resources>
