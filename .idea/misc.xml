@@ -9,7 +9,9 @@
         <entry key="..\:/AndroidStudioProjects/MetroNav/app/src/main/res/drawable/ic_switch.xml" value="0.152" />
         <entry key="..\:/AndroidStudioProjects/MetroNav/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/AndroidStudioProjects/MetroNav/app/src/main/res/layout/fragment_about.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/MetroNav/app/src/main/res/layout/fragment_history.xml" value="0.18802083333333333" />
         <entry key="..\:/AndroidStudioProjects/MetroNav/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjects/MetroNav/app/src/main/res/menu/nav_drawer_menu.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

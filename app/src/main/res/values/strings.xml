@@ -8,4 +8,7 @@
     <string name="pick_up_text">Pick-Up Station</string>
     <string name="find_route_text">Find Route</string>
     <string name="switch_content">switch stations</string>
+    <string name="about_title">About</string>
+    <string name="help_title">Help</string>
+    <string name="app_title">MetroNav</string>
 </resources>
