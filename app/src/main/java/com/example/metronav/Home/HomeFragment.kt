@@ -1,6 +1,7 @@
 package com.example.metronav.Home
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -14,7 +15,6 @@ import com.example.metronav.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
     private lateinit var viewModel:HomeViewModel
-    private lateinit var viewModelFactory: HomeViewModelFactory
     private lateinit var arrayAdapter: ArrayAdapter<String>
 
     var list = ArrayList<String>()
@@ -31,8 +31,7 @@ class HomeFragment : Fragment() {
         val binding:FragmentHomeBinding = DataBindingUtil.inflate(inflater,
             R.layout.fragment_home,container,false)
 
-        viewModelFactory = HomeViewModelFactory(binding.fromACTV.toString(),binding.toACTV.toString())
-        viewModel = ViewModelProvider(this,viewModelFactory).get(HomeViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
 
         for (item in viewModel.stations)
         {
@@ -47,7 +46,10 @@ class HomeFragment : Fragment() {
 
 
         binding.findRouteButton.setOnClickListener {
-
+            Log.i("fromACTV",binding.fromACTV.text.length.toString())
+            viewModel.from = binding.fromACTV.text.toString()
+            viewModel.to= binding.toACTV.text.toString()
+            binding.resultText.text = viewModel.getResult()
         }
 
         return binding.root
