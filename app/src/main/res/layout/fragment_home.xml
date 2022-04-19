@@ -1,134 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Home.HomeFragment">
 
-    <AutoCompleteTextView
-        android:id="@+id/from_auto_complete"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:hint="@string/pick_up_text"
-        app:layout_constraintEnd_toStartOf="@+id/swtich_imageView"
-        app:layout_constraintStart_toStartOf="@+id/guideline5"
-        app:layout_constraintTop_toBottomOf="@+id/from_text" />
+        <AutoCompleteTextView
+            android:id="@+id/from_auto_complete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:hint="@string/pick_up_text"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/from_text" />
 
-    <AutoCompleteTextView
-        android:id="@+id/to_auto_complete"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:hint="@string/drop_off_text"
-        app:layout_constraintEnd_toStartOf="@+id/swtich_imageView"
-        app:layout_constraintStart_toStartOf="@+id/guideline5"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        <AutoCompleteTextView
+            android:id="@+id/to_auto_complete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:hint="@string/drop_off_text"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-    <TextView
-        android:id="@+id/from_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/roboto"
-        android:text="@string/from_text"
-        android:textColor="@android:color/black"
-        android:textSize="30sp"
-        app:layout_constraintStart_toStartOf="@+id/guideline5"
-        app:layout_constraintTop_toTopOf="@+id/guideline7" />
+        <TextView
+            android:id="@+id/from_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="@string/from_text"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toTopOf="@+id/guideline7" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/roboto"
-        android:text="@string/to_text"
-        android:textColor="@android:color/black"
-        android:textSize="30sp"
-        app:layout_constraintStart_toStartOf="@+id/guideline5"
-        app:layout_constraintTop_toBottomOf="@+id/from_auto_complete" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/to_text"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/from_auto_complete" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.15" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.15" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.85" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.85" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.10" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.10" />
 
-    <Button
-        android:id="@+id/findRoute_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="@string/find_route_text"
-        app:layout_constraintEnd_toStartOf="@+id/guideline6"
-        app:layout_constraintStart_toStartOf="@+id/guideline5"
-        app:layout_constraintTop_toBottomOf="@+id/to_auto_complete" />
+        <Button
+            android:id="@+id/findRoute_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/find_route_text"
+            app:layout_constraintEnd_toStartOf="@+id/guideline6"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/to_auto_complete" />
 
-    <ImageView
-        android:id="@+id/swtich_imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/switch_content"
-        android:src="@drawable/ic_launcher_background"
-        app:layout_constraintBottom_toBottomOf="@+id/to_auto_complete"
-        app:layout_constraintEnd_toStartOf="@+id/guideline6"
-        app:layout_constraintTop_toTopOf="@+id/from_auto_complete"
-        app:srcCompat="@drawable/ic_switch" />
+        <ImageView
+            android:id="@+id/swtich_imageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/switch_content"
+            app:layout_constraintBottom_toTopOf="@+id/to_auto_complete"
+            app:layout_constraintEnd_toStartOf="@+id/guideline6"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/from_auto_complete"
+            app:srcCompat="@drawable/ic_swap" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:src="@drawable/ic_launcher_background"
-        app:layout_constraintBottom_toBottomOf="@+id/from_auto_complete"
-        app:layout_constraintEnd_toStartOf="@+id/guideline6"
-        app:layout_constraintStart_toEndOf="@+id/from_auto_complete"
-        app:layout_constraintTop_toTopOf="@+id/from_auto_complete"
-        app:srcCompat="@drawable/ic_near_me" />
+        <ImageView
+            android:id="@+id/nearMe_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/from_auto_complete"
+            app:layout_constraintEnd_toStartOf="@+id/guideline6"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toTopOf="@+id/from_auto_complete"
+            app:srcCompat="@drawable/ic_near_me" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="16dp"
-        android:src="@drawable/ic_launcher_background"
-        app:layout_constraintBottom_toBottomOf="@+id/from_auto_complete"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline6"
-        app:layout_constraintTop_toTopOf="@+id/from_auto_complete"
-        app:srcCompat="@drawable/ic_on_map" />
+        <ImageView
+            android:id="@+id/fromOnMap_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/from_auto_complete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toTopOf="@+id/from_auto_complete"
+            app:srcCompat="@drawable/ic_on_map" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="-8dp"
-        android:src="@drawable/ic_launcher_background"
-        app:layout_constraintBottom_toBottomOf="@+id/to_auto_complete"
-        app:layout_constraintEnd_toStartOf="@+id/guideline6"
-        app:layout_constraintStart_toEndOf="@+id/to_auto_complete"
-        app:layout_constraintTop_toTopOf="@+id/to_auto_complete"
-        app:srcCompat="@drawable/ic_on_map" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/toOnMap_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/to_auto_complete"
+            app:layout_constraintEnd_toStartOf="@+id/guideline6"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toTopOf="@+id/to_auto_complete"
+            app:srcCompat="@drawable/ic_on_map" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
