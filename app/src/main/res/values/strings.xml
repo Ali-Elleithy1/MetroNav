@@ -11,4 +11,18 @@
     <string name="about_title">About</string>
     <string name="help_title">Help</string>
     <string name="app_title">MetroNav</string>
+    <string name="login_label">Login</string>
+    <string name="password_label">Password</string>
+    <string name="email_label">Email</string>
+    <string name="registration_label">Registration</string>
+    <string name="fname_label">First Name</string>
+    <string name="lname_label">Last Name</string>
+    <string name="fname_hint">First Name</string>
+    <string name="confirm_password_label">Confirm Password</string>
+    <string name="register_button">Register</string>
+    <string name="lname_hint">Last Name</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="login_button">Login</string>
 </resources>
