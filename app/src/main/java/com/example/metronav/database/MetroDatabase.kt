@@ -1,4 +1,4 @@
-package com.example.metronav.Database
+package com.example.metronav.database
 
 import android.content.Context
 import androidx.room.Database
