@@ -1,4 +1,4 @@
-package com.example.metronav.Home
+package com.example.metronav.home
 
 import android.util.Log
 import androidx.lifecycle.LiveData
@@ -8,7 +8,7 @@ import com.example.metronav.Station
 import java.lang.Math.abs
 
 class HomeViewModel() :ViewModel(){
-    val line1:Array<Station> = arrayOf(Station("Helwan","1"), Station("Ain Helwan","1"), Station("Helwan University","1"),
+    private val line1: Array<Station> = arrayOf(Station("Helwan","1"), Station("Ain Helwan","1"), Station("Helwan University","1"),
         Station("Wadi Hof","1"), Station("Hadayek Helwan","1"), Station("Elmasraa","1"),
         Station("Tura El-Esmant","1"), Station("Kozzika","1"), Station("Tora El-Balad","1"),
         Station("Sakanat El-Maadi","1"), Station("Maadi","1"), Station("Hadayek El-Maadi","1"),
@@ -20,7 +20,7 @@ class HomeViewModel() :ViewModel(){
         Station("Hadayeq El-Zaitoun","1"), Station("Helmeyet El-Zaitoun","1"), Station("El-Matareyya","1"),
         Station("Ain Shams","1"), Station("Ezbet El-Nakhl","1"), Station("El-Marg","1"), Station("New Marg","1"))
 
-    val line2:Array<Station> = arrayOf(Station("El Monib","2"), Station("Sakiat Mekky","2"), Station("Omm El-Masryeen","2"),
+    private val line2: Array<Station> = arrayOf(Station("El Monib","2"), Station("Sakiat Mekky","2"), Station("Omm El-Masryeen","2"),
         Station("Giza","2"), Station("Faisal","2"), Station("Cairo University","2"),
         Station("El Bohoth","2"), Station("Dokki","2"), Station("Opera","2"),
         Station("Sadat","T12"), Station("Mohamed Naguib","2"), Station("Attaba","T23"),
@@ -28,7 +28,7 @@ class HomeViewModel() :ViewModel(){
         Station("St. Teresa","2"), Station("Khalafawy","2"), Station("Mezallat","2"),
         Station("Koliet El-Zeraa","2"), Station("Shubra Al Khaimah","2"))
 
-    val line3:Array<Station> = arrayOf(Station("Rod El Farag Corridor","3"), Station("Ring Road","3"), Station("El-Qawmia","3"),
+    private val line3: Array<Station> = arrayOf(Station("Rod El Farag Corridor","3"), Station("Ring Road","3"), Station("El-Qawmia","3"),
         Station("El-Bohy","3"), Station("Imbaba","3"), Station("Sudan","3"),
         Station("Kit-Kat","3"), Station("Safaa Hijazy","3"), Station("Maspero","3"),
         Station("Nasser","T13"), Station("Attaba","T23"), Station("Bab El Shaariya","3"),
@@ -45,7 +45,7 @@ class HomeViewModel() :ViewModel(){
 
     var linePoints:Array<Int> = arrayOf(0,0,0,0,0,0)
     var ts:Array<Int> = arrayOf(0,0,0,0,0,0)
-    val ticketPrices:Array<Int> = arrayOf(3,5,7)
+    private val ticketPrices: Array<Int> = arrayOf(3,5,7)
 
     val _result = MutableLiveData<String>()
     val result:LiveData<String>
@@ -65,7 +65,7 @@ class HomeViewModel() :ViewModel(){
         Log.i("HomeViewModel","$from || $to")
     }
 
-    fun printTs(route:Array<Int>)
+    private fun printTs(route:Array<Int>)
     {
         for((index,item) in route.withIndex())
         {
@@ -85,7 +85,7 @@ class HomeViewModel() :ViewModel(){
         println()
     }
 
-    fun printRoute(route:Array<String>, ticketPrices:Array<Int>):String
+    private fun printRoute(route:Array<String>, ticketPrices:Array<Int>):String
     {
         var stringBuilder = StringBuilder()
         stringBuilder.append("Route: ")
@@ -254,7 +254,7 @@ class HomeViewModel() :ViewModel(){
         return route
     }
 
-    fun findRoute(fromStationPos: Int,toStationPos: Int,froml: Int,tol:Int,fromIndex: Int,toIndex: Int,min: Int, stations:Array<Station>, from:String, to:String, ts:Array<Int>,linePoints:Array<Int>):Array<String>
+    private fun findRoute(fromStationPos: Int, toStationPos: Int, froml: Int, tol:Int, fromIndex: Int, toIndex: Int, min: Int, stations:Array<Station>, from:String, to:String, ts:Array<Int>, linePoints:Array<Int>):Array<String>
     {
         var route= arrayOf<String>()
         var fromStationPos = 0
