@@ -58,7 +58,7 @@ abstract class MetroDatabase: RoomDatabase()
                 {
                     instance = Room.databaseBuilder(context.applicationContext,
                                                     MetroDatabase::class.java,
-                                                    "users_database")
+                                                    "metro_database")
                         // Wipes and rebuilds instead of migrating if no Migration object.
                         // Migration is not part of this lesson. You can learn more about
                         // migration with Room in this blog post:
