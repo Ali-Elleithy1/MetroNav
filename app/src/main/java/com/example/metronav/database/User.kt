@@ -1,4 +1,4 @@
-package com.example.metronav.Database
+package com.example.metronav.database
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
