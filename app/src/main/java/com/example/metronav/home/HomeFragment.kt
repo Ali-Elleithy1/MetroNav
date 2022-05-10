@@ -1,4 +1,4 @@
-package com.example.metronav.Home
+package com.example.metronav.home
 
 import android.os.Bundle
 import android.util.Log
@@ -10,7 +10,6 @@ import android.widget.ArrayAdapter
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import com.example.metronav.R
-import com.example.metronav.Station
 import com.example.metronav.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
