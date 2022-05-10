@@ -1,11 +1,11 @@
-package com.example.metronav
+package com.example.metronav.history
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.databinding.DataBindingUtil
+import com.example.metronav.R
 
 class HistoryFragment : Fragment() {
 
