@@ -25,4 +25,6 @@
     <string name="password_hint">Password</string>
     <string name="confirm_password_hint">Confirm Password</string>
     <string name="login_button">Login</string>
+    <string name="forgot_password_text">forgot password?</string>
+    <string name="sign_up_text">Don\'t have an account? <font fgcolor='#000000'><b><u>Sign Up</u></b></font></string>
 </resources>
