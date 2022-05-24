@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_homeFragment_to_historyFragment"
             app:destination="@id/historyFragment" />
+        <argument
+            android:name="id"
+            app:argType="long" />
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
@@ -23,7 +26,11 @@
         android:id="@+id/historyFragment"
         android:name="com.example.metronav.history.HistoryFragment"
         android:label="fragment_history"
-        tools:layout="@layout/fragment_history" />
+        tools:layout="@layout/fragment_history" >
+        <argument
+            android:name="id"
+            app:argType="long" />
+    </fragment>
     <fragment
         android:id="@+id/registrationFragment"
         android:name="com.example.metronav.registration.RegistrationFragment"
