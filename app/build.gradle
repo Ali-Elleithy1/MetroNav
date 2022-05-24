@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs'
 }
 
 android {
@@ -85,8 +86,6 @@ dependencies {
         // optional - Paging 3 Integration
         implementation("androidx.room:room-paging:2.5.0-alpha01")
     }
-
-
-
+    //Safe Args
 
 }
